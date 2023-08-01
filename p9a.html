@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+ <title>program 9a</title>
+</head>
+<body>
+<p>RATHAN MOGAVEER<br/>
+4MT21IS032</p>
+<div id="h"></div>
+<scipt>
+var v = 0,f = 1, t = "TEXT-GROWING",color;
+function a()
+{
+if(f==1)
+v+=5,color="red";
+else
+v-=5,color ="blue";
+document.getElementById("b").innnerHTML="<h1 style=\"font-size:"+v+"px;
+margin:opx;
+color:"+color+"\"><b>"+t+"</b></h1>";
+if(v==50)
+f=0, t="TEXT-SHRINKING";
+if(v==5)
+f=1, t="TEXT-GROWING";
+c();
+}
+function c()
+{
+setTimeOut(a,300);
+}
+c();
+</script>
+</body>
+</html>
